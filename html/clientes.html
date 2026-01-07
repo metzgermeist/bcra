@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clientes</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            clientes
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">inicio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <form id="formCliente">
+                    <input type="text" id="nombre" placeholder="Nombre" required maxlength="15" minlength="3">
+                    <input type="text" id="apellido" placeholder="Apellido" required maxlength="15" minlength="3">
+                    <input type="text" id="direccion" placeholder="5 Avenue Anatole France" required maxlength="13" minlength="11">
+                    <input type="text" id="cuil" placeholder="CUIL/CUIT" required maxlength="13" minlength="11">
+                    <button type="submit">Calcular scoring</button>
+                </form>
+            </article>
+            <article id="salida">
+                
+            </article>
+            <article id="TodosClientes">
+                <button id="verClientes" type="button">Ver clientes</button>
+            </article>
+
+        </section>
+    </main>
+    <script src="../js/validaciones.js"></script>
+    <script src="../js/bcraApi.js"></script>
+    <script src="../js/persistencia.js"></script>
+    <script src="../js/scoring.js"></script>
+    <script src="../js/clientes.js"></script>
+    <script src="../js/funcionalidades.js"></script>
+    <script src="../js/salida.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
